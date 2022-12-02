@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+    </style>   
+    <script src="https://kit.fontawesome.com/79cb85ce92.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <header>
+        <i class="fa fa-snowflake-o" aria-hidden="true" id="toggle-icon"></i>
+        <h1> This is the Top <span> Weather App</span> Project </h1>
+    </header>
+
+    <section class="app-body">
+        
+        <div class="side-bar">
+
+            <div class="sub-bar1">
+                <img src="images/blue-flower.png">
+                <p> myWeather </p>
+            </div>
+
+            <div class="sub-bar2">
+                <div class="sub-bar21">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                </div>
+         
+                <div class="sub-bar22">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <img src="images/cloudy.png">
+
+
+                </div>
+
+            </div>
+     
+        </div>
+
+        <div class="block1"> 
+
+            <div class="block1-a">
+                <div class="block11">
+                    <div class="block111">
+                        <label for="myCity"> City  </label>
+                        <div class="my-input">
+                        <input type="search" id="myCity" placeholder="Insert the city here ...">
+                        <p class="error-message"> </p>
+                        </div>
+                    </div>
+
+                    <div class="block112">
+                        <img src="images/clouds.png " alt="" class="weather-img">
+                        <h1 class="temp">  </h1>
+                        <div>
+                            <img src="images/10d@2x.png" class="weather-icon">
+                            <p class="descp"> </p>                             
+                        </div>
+
+                        <p class="theCity"> </p>
+
+                        <p class="todayDate"> </p>
+                    </div>
+
+                </div>
+
+                <div class="block12">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="block1-b">
+
+                <div> 
+                  <h2> Feels Like Temp </h2> 
+                  <i class="bi bi-thermometer-sun"></i>
+                  <p class="feels-like"> </p>
+
+                </div>
+
+                <div>
+                    <h2> Wind Speed </h2> 
+                    <i class="bi bi-wind"></i>
+                    <p class="wind-speed">  </p>
+                </div>
+
+                <div>
+                    <h2> Humidity</h2>
+                    <svg viewBox="0 0 24 24" class="humidity-icon">
+                        <path fill="currentColor" d="M12,3.25C12,3.25 6,10 6,14C6,17.32 8.69,20 12,20A6,6 0 0,0 18,14C18,10 12,3.25 12,3.25M14.47,9.97L15.53,11.03L9.53,17.03L8.47,15.97M9.75,10A1.25,1.25 0 0,1 11,11.25A1.25,1.25 0 0,1 9.75,12.5A1.25,1.25 0 0,1 8.5,11.25A1.25,1.25 0 0,1 9.75,10M14.25,14.5A1.25,1.25 0 0,1 15.5,15.75A1.25,1.25 0 0,1 14.25,17A1.25,1.25 0 0,1 13,15.75A1.25,1.25 0 0,1 14.25,14.5Z" />
+                    </svg>
+                    <p class="humidity"> </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="block2"> 
+
+            <h1> The Weather For The Next 5 Days </h1>
+            
+            <div class="weekly-weather">
+                <div>
+                     <h2> Monday</h2>
+                     <p> 10 ° C</p>   
+                     <i class="bi bi-cloud-rain-heavy"></i>   
+                     <p> 50% Rain </p>              
+                </div>
+                <div>
+                     <h2> Tuesday</h2>
+                     <p> 10 ° C</p>  
+                     <i class="bi bi-cloud-rain-heavy"></i>   
+                     <p> 50% Rain </p>           
+                </div>
+                <div>
+                    <h2> Wednesday</h2> 
+                    <p> 10 ° C</p>
+                    <i class="bi bi-cloud-rain-heavy"></i>
+                    <p> 50% Rain </p>
+                </div>
+                <div>
+                    <h2> Thursday</h2>
+                    <p> 10 ° C</p>  
+                    <i class="bi bi-cloud-rain-heavy"></i>
+                    <p> 50% Rain </p>
+                </div>
+                <div>
+                    <h2> Friday</h2> 
+                    <p> 10 ° C</p>
+                    <i class="bi bi-cloud-rain-heavy"></i>
+                    <p> 50% Rain </p>
+                </div>
+              
+
+            </div>
+
+        </div>
+
+        <div class="block3"> 
+
+            <h1> The Weather For The Next Hours </h1>
+            <div class="hourly-weather">
+                <div>
+                     <h2 class="myTime0"> 12 pm </h2>
+                     <p class="temp0"> 10 ° C</p>   
+                     <img class="hourlyIcon0">
+                     <p class="wind0"> 50% Rain </p>              
+                </div>
+                <div>
+                     <h2 class="myTime1"> 3 pm </h2>
+                     <p class="temp1"> 10 ° C</p>  
+                    <img class="hourlyIcon1">
+                     <p class="wind1"> 50% Rain </p>           
+                </div>
+                <div>
+                    <h2 class="myTime2"> 6 pm </h2> 
+                    <p class="temp2"> 10 ° C</p>
+                    <img class="hourlyIcon2">
+                    <p class="wind2"> 50% Rain </p>
+                </div>
+                <div>
+                    <h2 class="myTime3"> 9 pm </h2>
+                    <p class="temp3"> 10 ° C</p>  
+                    <img class="hourlyIcon3">
+                    <p class="wind3"> 50% Rain </p>
+                </div>
+                <div>
+                    <h2 class="myTime4"> 12 am</h2> 
+                    <p class="temp4"> 10 ° C</p>
+                    <img class="hourlyIcon4">
+                    <p class="wind4"> 50% Rain </p>
+                </div>
+                <div>
+                    <h2 class="myTime5"> 3 am</h2>
+                     <p class="temp5"> 10 ° C</p>
+                    <img class="hourlyIcon5">
+                    <p class="wind5"> 50% Rain </p>
+                    
+                </div>
+                <div>
+                    <h2 class="myTime6"> 6 am </h2> 
+                    <p class="temp6"> 10 ° C</p>
+                    <img class="hourlyIcon6">
+                    <p class="wind6"> 50% Rain </p>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+    </section>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
