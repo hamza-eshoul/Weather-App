@@ -8,7 +8,7 @@ async function fetchMyDefaultWeatherData() {
     const myDefaultCity = document.getElementById('myCity');
     myDefaultCity.value = "Rabat";
 
-    const myDefaultResult = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=34.022405&lon=-6,834543&units=metric&appid=f47919da3b9f25258951e3c43233925a`)
+    const myDefaultResult = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=34.022405&lon=-6,834543&units=metric&appid=f47919da3b9f25258951e3c43233925a`, {mode : 'cors'})
 
     const myDefaultCityData = await myDefaultResult.json();
 

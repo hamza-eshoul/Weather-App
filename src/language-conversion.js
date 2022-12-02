@@ -138,7 +138,7 @@ function FrenchTranslate(){
             const myLatitude = myCoordinates.myLat;
             const myLongitude = myCoordinates.myLong;
         
-            const myResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${myLatitude}&lon=${myLongitude}&lang=fr&appid=f47919da3b9f25258951e3c43233925a`); 
+            const myResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${myLatitude}&lon=${myLongitude}&lang=fr&appid=f47919da3b9f25258951e3c43233925a`, {mode : 'cors'}); 
         
             const myResponseObject = await myResponse.json();
             
@@ -312,7 +312,7 @@ function FrenchTranslate(){
             const myLatitude = myCoordinates.myLat;
             const myLongitude = myCoordinates.myLong;
         
-            const myResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${myLatitude}&lon=${myLongitude}&appid=f47919da3b9f25258951e3c43233925a`); 
+            const myResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${myLatitude}&lon=${myLongitude}&appid=f47919da3b9f25258951e3c43233925a`, {mode : 'cors'}); 
         
             const myResponseObject = await myResponse.json();
             
